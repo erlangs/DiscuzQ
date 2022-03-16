@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:dio_cookie_manager/dio_cookie_manager.dart';
 import 'package:cookie_jar/cookie_jar.dart';
 import 'package:dio_http2_adapter/dio_http2_adapter.dart';
-import 'package:pretty_dio_logger/pretty_dio_logger.dart';
+// import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import 'package:discuzq/utils/StringHelper.dart';
 import 'package:discuzq/widgets/common/discuzToast.dart';
@@ -82,11 +82,11 @@ class Request {
         ///
         /// web下不调用原生API
         if (!FlutterDevice.isWeb) {
-          final String deviceAgent = await FlutterDevice.getDeviceAgentString();
-          final String userAgent = await FlutterDevice.getWebviewUserAgent();
-          options.headers['user-agent'] = userAgent;
-          options.headers['user-device'] =
-              deviceAgent.split(';')[0]; // not important
+          // final String deviceAgent = await FlutterDevice.getDeviceAgentString();
+          // final String userAgent = await FlutterDevice.getWebviewUserAgent();
+          // options.headers['user-agent'] = userAgent;
+          // options.headers['user-device'] =
+          //     deviceAgent.split(';')[0]; // not important
         }
 
         // more devices
@@ -240,17 +240,17 @@ class Request {
         ///
         DiscuzToast.show(context: context, message: errMessage);
         return e;
-      }))
+      }));
 
-      /// logger
-      ..add(PrettyDioLogger(
-          requestHeader: false,
-          requestBody: false,
-          responseBody: false,
-          responseHeader: false,
-          error: true,
-          compact: true,
-          maxWidth: 90));
+      // /// logger
+      // ..add(PrettyDioLogger(
+      //     requestHeader: false,
+      //     requestBody: false,
+      //     responseBody: false,
+      //     responseHeader: false,
+      //     error: true,
+      //     compact: true,
+      //     maxWidth: 90));
   }
 
   ///
@@ -333,7 +333,7 @@ class Request {
       // todo: this method should be removed after DIO fixed bugs some how
       resp.data = await _temporaryTransformer(resp.data);
     } catch (e) {
-      throw e;
+      // throw e;
     }
     return Future.value(resp);
   }

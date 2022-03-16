@@ -68,10 +68,10 @@ class _AccountDelegateState extends State<AccountDelegate> {
   Widget build(BuildContext context) => Consumer<UserProvider>(
       builder: (BuildContext context, UserProvider user, Widget child) =>
           Scaffold(
-            body: extended.NestedScrollView(
-              pinnedHeaderSliverHeightBuilder: () {
-                return MediaQuery.of(context).padding.top;
-              },
+            body: NestedScrollView(
+              // pinnedHeaderSliverHeightBuilder: () {
+              //   return MediaQuery.of(context).padding.top;
+              // },
               headerSliverBuilder: (context, innerBoxIsScrolled) {
                 return <Widget>[
                   DiscuzSliverAppBar(
@@ -158,11 +158,14 @@ class _LogoutButton extends StatelessWidget {
       label: "退出",
       onPressed: () async => await showDialog(
           context: context,
-          child: DiscuzDialog(
-              title: '提示',
-              message: '是否退出登录？',
-              isCancel: true,
-              onConfirm: () => AuthHelper.logout(context: context))),
+          builder: (BuildContext context) {
+            return DiscuzDialog(
+                title: '提示',
+                message: '是否退出登录？',
+                isCancel: true,
+                onConfirm: () => AuthHelper.logout(context: context));
+            }
+    ),
     );
   }
 }

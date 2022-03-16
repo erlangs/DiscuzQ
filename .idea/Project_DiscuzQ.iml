@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_status_alert/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_status_alert/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_status_alert/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/path_provider_macos/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/path_provider_macos/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/path_provider_macos/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_toast/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_toast/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_toast/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_bugly/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_bugly/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_bugly/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_user_agent/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_user_agent/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_user_agent/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/path_provider_macos/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/path_provider_macos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/path_provider_macos/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_native_loading/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_native_loading/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_native_loading/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_widget_from_html/packages/core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_widget_from_html/packages/core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_widget_from_html/packages/core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_udid/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_udid/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_udid/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_image_compress/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_image_compress/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_image_compress/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/sqflite/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/sqflite/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/sqflite/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_clipboardManager/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_clipboardManager/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_clipboardManager/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_widget_from_html/packages/enhanced/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_widget_from_html/packages/enhanced/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_widget_from_html/packages/enhanced/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/sqflite/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/sqflite/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/sqflite/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_cached_network_image/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_cached_network_image/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/flutter_cached_network_image/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/wakelock_macos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/wakelock_macos/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mobile/macos/Flutter/ephemeral/.symlinks/plugins/wakelock_macos/.dart_tool" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>

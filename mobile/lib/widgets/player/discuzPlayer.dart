@@ -223,52 +223,52 @@ class _DiscuzPlayerState extends State<DiscuzPlayer> {
       );
     }
 
-    return _controller.value.initialized
-        ? Stack(alignment: Alignment.topCenter, children: <Widget>[
-            Center(
-                child: AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller))),
-            Stack(
-              children: <Widget>[
-                AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 50),
-                  reverseDuration: const Duration(milliseconds: 200),
-                  child: _controller.value.isPlaying
-                      ? const SizedBox()
-                      : Container(
-                          color: Colors.black26,
-                          child: const Center(
-                            child: const DiscuzIcon(
-                              CupertinoIcons.play_fill,
-                              color: Colors.white,
-                              size: 60.0,
-                            ),
-                          ),
-                        ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    _controller.value.isPlaying
-                        ? _controller.pause()
-                        : _controller.play();
-                  },
-                ),
-              ],
-            ),
-            VideoProgressIndicator(
-              _controller,
-              allowScrubbing: true,
-              colors: VideoProgressColors(
-                  backgroundColor: Colors.black12,
-                  playedColor: DiscuzApp.themeOf(context).primaryColor),
-              padding: const EdgeInsets.all(0),
-            )
-          ])
-        : Center(
-            child: DiscuzCachedNetworkImage(
-              imageUrl: widget.video.attributes.coverUrl,
-            ),
-          );
+    // return _controller.value.initialized
+    //     ? Stack(alignment: Alignment.topCenter, children: <Widget>[
+    //         Center(
+    //             child: AspectRatio(
+    //                 aspectRatio: _controller.value.aspectRatio,
+    //                 child: VideoPlayer(_controller))),
+    //         Stack(
+    //           children: <Widget>[
+    //             AnimatedSwitcher(
+    //               duration: const Duration(milliseconds: 50),
+    //               reverseDuration: const Duration(milliseconds: 200),
+    //               child: _controller.value.isPlaying
+    //                   ? const SizedBox()
+    //                   : Container(
+    //                       color: Colors.black26,
+    //                       child: const Center(
+    //                         child: const DiscuzIcon(
+    //                           CupertinoIcons.play_fill,
+    //                           color: Colors.white,
+    //                           size: 60.0,
+    //                         ),
+    //                       ),
+    //                     ),
+    //             ),
+    //             GestureDetector(
+    //               onTap: () {
+    //                 _controller.value.isPlaying
+    //                     ? _controller.pause()
+    //                     : _controller.play();
+    //               },
+    //             ),
+    //           ],
+    //         ),
+    //         VideoProgressIndicator(
+    //           _controller,
+    //           allowScrubbing: true,
+    //           colors: VideoProgressColors(
+    //               backgroundColor: Colors.black12,
+    //               playedColor: DiscuzApp.themeOf(context).primaryColor),
+    //           padding: const EdgeInsets.all(0),
+    //         )
+    //       ])
+    //     : Center(
+    //         child: DiscuzCachedNetworkImage(
+    //           imageUrl: widget.video.attributes.coverUrl,
+    //         ),
+    //       );
   }
 }

@@ -125,44 +125,46 @@ class _ForumDelegateState extends State<ForumDelegate>
                   .toList()));
 
       /// 生成论坛分类和内容区域
-      return Scaffold(
-          body: extended.NestedScrollView(
-        pinnedHeaderSliverHeightBuilder: () {
-          return MediaQuery.of(context).padding.top;
-        },
-        headerSliverBuilder: (context, innerBoxIsScrolled) {
-          return <Widget>[
-            DiscuzSliverAppBar(
-              title: const LogoLeading(),
-              elevation: 10,
-              actions: [_actionButtons],
-              centerTitle: false,
-              expandedHeight: 0,
-              bottom: PreferredSize(
-                child: _tabs,
-                preferredSize: const Size.fromHeight(45),
-              ),
-              brightness: Brightness.light,
-              backgroundColor: DiscuzApp.themeOf(context).backgroundColor,
-              floating: true,
-              stretch: true,
-            ),
-          ];
-        },
-        body: Column(
-          children: [
-            Expanded(
-                child: extended.NestedScrollViewInnerScrollPositionKeyWidget(
-              const Key("tabKey"),
-              ForumDelegateContent(
-                controller: _tabController,
-                filter: _filterItem,
-                onAppbarState: widget.onAppbarState,
-              ),
-            ))
-          ],
-        ),
-      ));
+      return Container();
+
+      //   Scaffold(
+      //     body: extended.NestedScrollView(
+      //   pinnedHeaderSliverHeightBuilder: () {
+      //     return MediaQuery.of(context).padding.top;
+      //   },
+      //   headerSliverBuilder: (context, innerBoxIsScrolled) {
+      //     return <Widget>[
+      //       DiscuzSliverAppBar(
+      //         title: const LogoLeading(),
+      //         elevation: 10,
+      //         actions: [_actionButtons],
+      //         centerTitle: false,
+      //         expandedHeight: 0,
+      //         bottom: PreferredSize(
+      //           child: _tabs,
+      //           preferredSize: const Size.fromHeight(45),
+      //         ),
+      //         brightness: Brightness.light,
+      //         backgroundColor: DiscuzApp.themeOf(context).backgroundColor,
+      //         floating: true,
+      //         stretch: true,
+      //       ),
+      //     ];
+      //   },
+      //   body: Column(
+      //     children: [
+      //       Expanded(
+      //           child: extended.NestedScrollViewInnerScrollPositionKeyWidget(
+      //         const Key("tabKey"),
+      //         ForumDelegateContent(
+      //           controller: _tabController,
+      //           filter: _filterItem,
+      //           onAppbarState: widget.onAppbarState,
+      //         ),
+      //       ))
+      //     ],
+      //   ),
+      // ));
     });
   }
 

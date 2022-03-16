@@ -131,7 +131,8 @@ class _UserHomeDelegateState extends State<UserHomeDelegate> {
 
               showDialog(
                   context: context,
-                  child: DiscuzDialog(
+              builder: (BuildContext context) {
+  return DiscuzDialog(
                       title: '拉黑用户',
                       message: '您确定拉黑该用户吗? \r\n这样一来您将无法接收他的内容',
                       isCancel: true,
@@ -141,7 +142,8 @@ class _UserHomeDelegateState extends State<UserHomeDelegate> {
                         if (result && Navigator.canPop(context)) {
                           Navigator.pop(context);
                         }
-                      }));
+                      });}
+              );
 
               /// add user into black list
             }),

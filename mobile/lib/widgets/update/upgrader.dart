@@ -76,13 +76,23 @@ class _UpgraderState extends State<Upgrader> {
   void _showUpdateDialog(String version, String url, bool isForceUpgrade) =>
       showDialog(
           context: context,
-          child: DiscuzDialog(
-              isCancel: true,
-              title: "有新版啦",
-              message: version,
-              onConfirm: () async {
-                await WebviewHelper.launchUrl(url: url);
-              }));
+          builder: (BuildContext context) {
+            return DiscuzDialog(
+                  isCancel: true,
+                  title: "有新版啦",
+                  message: version,
+                  onConfirm: () async {
+                    await WebviewHelper.launchUrl(url: url);
+                  });
+          }
+          // child: DiscuzDialog(
+          //     isCancel: true,
+          //     title: "有新版啦",
+          //     message: version,
+          //     onConfirm: () async {
+          //       await WebviewHelper.launchUrl(url: url);
+          //     })
+      );
 
   @override
   Widget build(BuildContext context) {

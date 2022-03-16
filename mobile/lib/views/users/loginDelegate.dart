@@ -195,14 +195,16 @@ class _LoginDelegateState extends State<LoginDelegate> {
                     if (forum.isSMSEnabled) {
                       await showDialog(
                           context: context,
-                          child: DiscuzDialog(
+                      builder: (BuildContext context) {
+  return DiscuzDialog(
                               title: "提示",
                               message: "根据相关规定，请您使用短信验证码登录完成一键注册",
                               onConfirm: () {
                                 setState(() {
                                   _enableSMSlogin = true;
                                 });
-                              }));
+                              });}
+  );
                       return;
                     }
                     DiscuzRoute.navigate(

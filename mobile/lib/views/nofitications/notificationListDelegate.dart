@@ -300,14 +300,17 @@ class _NotificationDelegateState extends State<NotificationListDelegate> {
     /// 如果删除成功，还需要隐藏当前请求删除的项目
     await showDialog(
         context: context,
-        child: DiscuzDialog(
+        builder: (BuildContext context) {
+          return DiscuzDialog(
             title: '提示',
             message: '确定删除吗？',
             isCancel: true,
             onConfirm: () {
               process();
               deleted = true;
-            }));
+            });
+        }
+    );
     return Future.value(deleted);
   }
 

@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:image_cropper/image_cropper.dart';
-import 'package:image_picker/image_picker.dart';
+// import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:discuzq/utils/request/urls.dart';
@@ -81,31 +81,42 @@ class _AvatarPickerState extends State<AvatarPicker> {
     if (await Permission.photos.request().isDenied) {
       showDialog(
           context: context,
-          child: DiscuzDialog(
+        builder: (BuildContext context) {
+          return DiscuzDialog(
             title: "设置",
             message: "请设置并允许访问您的相册来继续",
             isCancel: true,
             onConfirm: () {
               openAppSettings();
             },
-          ));
+          );
+        }
+          // child: DiscuzDialog(
+          //   title: "设置",
+          //   message: "请设置并允许访问您的相册来继续",
+          //   isCancel: true,
+          //   onConfirm: () {
+          //     openAppSettings();
+          //   },
+          // )
+        );
       return;
     }
 
-    final _picker = ImagePicker();
-    final file =
-        await _picker.getImage(source: ImageSource.gallery, imageQuality: 60);
-    if (file == null) return null;
-
-    imageFile = File(file.path);
-
-    if (imageFile != null) {
-      setState(() {
-        pickerState = PickerState.picked;
-      });
-
-      _cropImage();
-    }
+    // final _picker = ImagePicker();
+    // final file =
+    //     await _picker.getImage(source: ImageSource.gallery, imageQuality: 60);
+    // if (file == null) return null;
+    //
+    // imageFile = File(file.path);
+    //
+    // if (imageFile != null) {
+    //   setState(() {
+    //     pickerState = PickerState.picked;
+    //   });
+    //
+    //   _cropImage();
+    // }
   }
 
   ///

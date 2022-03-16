@@ -42,15 +42,18 @@ class _HtmlRenderState extends State<HtmlRender>
         onTapUrl: (url) async {
       await showDialog(
           context: context,
-          child: DiscuzDialog(
-            title: "是否继续打开",
-            message: "即将打开外部链接，如您无法确保安全性则可以取消。 \r\n${url}",
-            isCancel: true,
-            confirmContent: "继续",
-            onConfirm: () async {
-              await WebviewHelper.launchUrl(url: url);
-            },
-          ));
+          builder: (BuildContext context) {
+            return DiscuzDialog(
+              title: "是否继续打开",
+              message: "即将打开外部链接，如您无法确保安全性则可以取消。 \r\n${url}",
+              isCancel: true,
+              confirmContent: "继续",
+              onConfirm: () async {
+                await WebviewHelper.launchUrl(url: url);
+              },
+            );
+          }
+      );
     },
 
         // /// onTapSharpUrl 点击话题

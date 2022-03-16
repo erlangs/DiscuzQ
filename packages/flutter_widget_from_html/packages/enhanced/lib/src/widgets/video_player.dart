@@ -117,7 +117,7 @@ class _Controller extends lib.ChewieController {
         final vpv = videoPlayerController.value;
         debugPrint('[_Controller]: vpv=$vpv');
 
-        if (!vpv.initialized) return;
+        // if (!vpv.initialized) return;
         _aspectRatio = vpv.aspectRatio;
 
         // workaround because we cannot call `vps.setState()` directly

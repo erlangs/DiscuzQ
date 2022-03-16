@@ -7,10 +7,14 @@ class FlutterNativeLoading {
       const MethodChannel('flutter_native_loading');
 
   static Future<void> show() async {
-    await _channel.invokeMethod('showLoading');
+    try {
+      await _channel.invokeMethod('showLoading');
+    } catch(e) {}
   }
 
   static Future<void> hide() async {
-    await _channel.invokeMethod('hideLoading');
+    try {
+      await _channel.invokeMethod('hideLoading');
+    } catch(e) {}
   }
 }

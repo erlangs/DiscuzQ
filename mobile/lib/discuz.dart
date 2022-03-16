@@ -179,10 +179,10 @@ class __DiscuzAppDelegateState extends State<_DiscuzAppDelegate> {
   /// 底部按钮菜单
   final List<NavigatorItem> _items = [
     const NavigatorItem(icon: 0xe78f),
-    const NavigatorItem(icon: 0xe605, size: 27, shouldLogin: true),
+    const NavigatorItem(icon: 0xe605, size: 27),//, shouldLogin: true),
     const NavigatorItem(isPublishButton: true),
-    const NavigatorItem(icon: 0xe604, size: 23, shouldLogin: true),
-    const NavigatorItem(icon: 0xe7c7, size: 22, shouldLogin: true)
+    const NavigatorItem(icon: 0xe604, size: 23),// shouldLogin: true),
+    const NavigatorItem(icon: 0xe7c7, size: 22),//, shouldLogin: true)
   ];
 
   /// 使用global key
@@ -238,7 +238,7 @@ class __DiscuzAppDelegateState extends State<_DiscuzAppDelegate> {
               children: _views,
               physics: const NeverScrollableScrollPhysics(),
             ),
-            resizeToAvoidBottomPadding: true,
+            // resizeToAvoidBottomPadding: true,
             bottomNavigationBar: DiscuzBottomNavigator(
               items: _items,
               onItemSelected: (index) {

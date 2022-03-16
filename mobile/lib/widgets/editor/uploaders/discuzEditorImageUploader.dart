@@ -121,14 +121,26 @@ class _DiscuzEditorImageUploaderState extends State<DiscuzEditorImageUploader> {
         await Permission.camera.request().isDenied) {
       await showDialog(
           context: context,
-          child: DiscuzDialog(
-            title: "设置",
-            message: "请设置并允许访问您的相册和相机来继续选择要发布的图片",
-            isCancel: true,
-            onConfirm: () {
-              openAppSettings();
-            },
-          ));
+          builder: (BuildContext context) {
+            return DiscuzDialog(
+              title: "设置",
+              message: "请设置并允许访问您的相册和相机来继续选择要发布的图片",
+              isCancel: true,
+              onConfirm: () {
+                openAppSettings();
+              },
+            );
+          }
+
+          // child: DiscuzDialog(
+          //   title: "设置",
+          //   message: "请设置并允许访问您的相册和相机来继续选择要发布的图片",
+          //   isCancel: true,
+          //   onConfirm: () {
+          //     openAppSettings();
+          //   },
+          // )
+      );
       return;
     }
 

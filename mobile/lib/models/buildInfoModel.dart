@@ -52,7 +52,7 @@ class BuildInfoModel {
   final String policy;
 
   const BuildInfoModel(
-      {this.domain = 'https://discuz.chat',
+      {this.domain = 'http://localhost:8008',
       this.site = 'https://www.clodra.com',
       this.technicalSupport = "",
       this.helpCenter = "",

@@ -11,14 +11,19 @@ class RequestCacheInterceptor extends Interceptor {
   var _cache = Map<Uri, Response>();
 
   @override
-  Future onRequest(RequestOptions options) async {
+  // void onRequest(
+  //     RequestOptions options,
+  //     RequestInterceptorHandler handler,
+  //     )
+  Future onRequest(RequestOptions options) async
+  {
     Response response = _cache[options.uri];
     if (options.extra["refresh"] == true) {
       print("${options.uri}: force refresh, ignore cache! \n");
-      return options;
+      // return options;
     } else if (response != null) {
       print("cache hit: ${options.uri} \n");
-      return response;
+      // return response;
     }
   }
 

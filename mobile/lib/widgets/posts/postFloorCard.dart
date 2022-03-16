@@ -248,7 +248,8 @@ class _PostFloorCardState extends State<PostFloorCard>
                     if (result == "delete") {
                       await showDialog(
                           context: context,
-                          child: DiscuzDialog(
+                      builder: (BuildContext context) {
+                        return DiscuzDialog(
                               title: '提示',
                               message: '是否删除评论？',
                               isCancel: true,
@@ -261,7 +262,8 @@ class _PostFloorCardState extends State<PostFloorCard>
                                   /// 删除成功，隐藏该项目
                                   widget.onDelete();
                                 }
-                              }));
+                              });}
+                      );
                       return;
                     }
 

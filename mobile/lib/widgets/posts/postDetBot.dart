@@ -105,7 +105,9 @@ class _PostDetBotState extends State<PostDetBot> {
                   ? DiscuzLink(
                       label: '删除',
                       onTap: () async {
-                        await showDialog(context: context, child: DiscuzDialog(
+                        await showDialog(context: context,
+                        builder: (BuildContext context) {
+                          return DiscuzDialog(
                             title: '提示',
                             message: '确定删除吗？',
                             isCancel: true,
@@ -119,7 +121,8 @@ class _PostDetBotState extends State<PostDetBot> {
                               if (result && Navigator.canPop(context)) {
                                 Navigator.pop(context);
                               }
-                            }));
+                            });}
+                        );
                       },
                     )
                   : const SizedBox(),
